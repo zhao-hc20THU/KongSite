@@ -21,7 +21,7 @@ export default function JoinPage() {
         titleZh="加入我们"
         titleEn="Join Us"
         descriptionZh="欢迎对水泥混凝土化学功能材料、建筑高分子材料和可持续土木工程材料感兴趣的同学与合作者联系。"
-        descriptionEn="Students and collaborators interested in cement chemistry, construction polymers, and sustainable civil engineering materials are welcome to contact the group."
+        descriptionEn="Students and collaborators interested in cement chemistry, construction polymers, and sustainable civil engineering materials are welcome to join academic exchange with the group."
         image="/images/hero-lab-discussion.jpg"
       />
       <section className="section-pad bg-white">
@@ -43,6 +43,19 @@ export default function JoinPage() {
           <a className="mt-8 inline-flex rounded bg-mineral px-5 py-3 text-sm font-semibold text-white hover:bg-ink" href={`mailto:${site.email}`}>
             Email: {site.email}
           </a>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            <div className="rounded border border-slate-200 bg-cement p-5">
+              <h2 className="text-lg font-semibold text-ink">联系地址 / Address</h2>
+              <p className="mt-3 text-sm text-slate-700">{site.addressZh}</p>
+              <p className="mt-1 text-sm text-slate-600">{site.addressEn}</p>
+            </div>
+            <div className="rounded border border-slate-200 bg-cement p-5">
+              <h2 className="text-lg font-semibold text-ink">教师主页 / Faculty Profile</h2>
+              <a href={site.profileUrl} target="_blank" rel="noreferrer" className="mt-3 block text-sm text-mineral hover:underline">
+                {site.profileUrl}
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>

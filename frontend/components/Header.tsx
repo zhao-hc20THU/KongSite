@@ -16,7 +16,8 @@ export function Header() {
         <nav className="hidden items-center gap-5 text-sm font-medium text-slate-700 lg:flex" aria-label="Primary navigation">
           {site.nav.map((item) => (
             <Link key={item.href} href={item.href} className="rounded px-1 py-2 hover:text-mineral focus:outline-none focus:ring-2 focus:ring-mineral">
-              <span>{item.en}</span>
+              <span>{item.zh}</span>
+              <span className="ml-1 text-xs text-slate-500">{item.en}</span>
             </Link>
           ))}
         </nav>

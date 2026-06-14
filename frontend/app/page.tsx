@@ -6,7 +6,7 @@ import { ResearchCard } from "@/components/ResearchCard";
 import { PublicationItem } from "@/components/PublicationItem";
 import { site } from "@/content/site";
 import { researchDirections } from "@/content/research";
-import { publications } from "@/content/publications";
+import { homeSelectedPublications } from "@/content/publications";
 import { news } from "@/content/news";
 import { projects } from "@/content/projects";
 
@@ -62,10 +62,10 @@ export default function HomePage() {
               eyebrow="Selected Publications"
               titleZh="代表性论文"
               titleEn="Selected Publications"
-              introZh="论文题名链接至 DOI 页面，便于读者进入期刊或出版商页面查看摘要、卷期和全文信息。"
+              introZh="选取近八年引用量较高且方向分散的代表性成果，覆盖水化调控、新型胶凝材料和耐久性提升。"
             />
             <div className="rounded border border-slate-200 bg-white px-6">
-              {publications.slice(0, 3).map((publication) => (
+              {homeSelectedPublications.map((publication) => (
                 <PublicationItem key={publication.title} publication={publication} />
               ))}
             </div>
@@ -125,10 +125,10 @@ export default function HomePage() {
               titleZh="欢迎关注水泥化学与建筑高分子材料"
               titleEn="Open to students and collaborators in cement chemistry and construction polymers"
               introZh="课题组面向水泥化学、建筑材料、化学外加剂、功能高分子材料和工程应用等方向开展研究。招生与访问机会请以后续正式通知为准。"
-              introEn="Students and collaborators interested in cement chemistry, chemical admixtures, functional polymers, and engineering applications are welcome to contact the group."
+              introEn="Students and collaborators interested in cement chemistry, chemical admixtures, functional polymers, and engineering applications are welcome to join academic exchange with the group."
             />
-            <Link href="/contact/" className="inline-flex rounded bg-mineral px-5 py-3 text-sm font-semibold text-white hover:bg-ink focus:outline-none focus:ring-2 focus:ring-mineral">
-              Contact / 联系我们
+            <Link href="/join/" className="inline-flex rounded bg-mineral px-5 py-3 text-sm font-semibold text-white hover:bg-ink focus:outline-none focus:ring-2 focus:ring-mineral">
+              Join Us / 加入我们
             </Link>
           </div>
         </div>

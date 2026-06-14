@@ -9,7 +9,7 @@ export function ResearchCard({ direction }: { direction: ResearchDirection }) {
         alt={direction.figureAlt}
         width={700}
         height={394}
-        className="mb-5 aspect-video w-full rounded border border-slate-200 object-cover"
+        className="mb-5 aspect-video w-full rounded border border-slate-200 bg-white object-contain"
       />
       <p className="mb-4 text-xs leading-5 text-slate-500">{direction.figureCaptionZh}</p>
       <div className="mb-4 h-1 w-14 rounded bg-mineral" />

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -22,9 +23,13 @@ export default function PeoplePage() {
         <div className="page-shell">
           <SectionTitle titleZh="负责人" titleEn="Principal Investigator" />
           <article className="grid gap-8 rounded border border-slate-200 bg-cement p-8 md:grid-cols-[220px_1fr]">
-            <div className="flex h-48 items-center justify-center rounded bg-white text-center text-sm font-semibold text-mineral ring-1 ring-slate-200">
-              Kong&apos;s Lab
-            </div>
+            <Image
+              src="/images/people/xiangming-kong.jpg"
+              alt="Professor Xiangming Kong"
+              width={220}
+              height={260}
+              className="h-64 w-full rounded bg-white object-cover object-top ring-1 ring-slate-200"
+            />
             <div>
               <h2 className="text-3xl font-semibold text-ink">{people.principalInvestigator.nameZh}</h2>
               <p className="mt-1 text-lg font-medium text-mineral">{people.principalInvestigator.nameEn}</p>

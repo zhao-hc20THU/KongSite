@@ -12,8 +12,10 @@ export const site = {
   descriptionEn:
     "The group investigates organic-inorganic strategies for cement-based materials, connecting molecular composition and micro/nano-scale structure with rheology, setting and hardening, cracking control, durability, and engineering applications.",
   email: "kxm@mail.tsinghua.edu.cn",
-  addressZh: "清华大学土木工程系",
-  addressEn: "Department of Civil Engineering, Tsinghua University",
+  addressZh: "清华大学土木工程系新馆",
+  addressEn: "New Building of Civil Engineering, Tsinghua University",
+  profileUrl: "https://www.civil.tsinghua.edu.cn/ce/info/1133/2395.htm",
+  departmentUrl: "https://www.civil.tsinghua.edu.cn/",
   icpPlaceholder: "ICP备案信息将在正式绑定中国内地服务器后更新",
   publicSecurityPlaceholder: "公安联网备案信息将在正式上线后更新",
   nav: [
@@ -23,7 +25,6 @@ export const site = {
     { href: "/publications/", zh: "论文成果", en: "Publications" },
     { href: "/projects/", zh: "项目应用", en: "Projects" },
     { href: "/news/", zh: "组内动态", en: "News" },
-    { href: "/join/", zh: "加入我们", en: "Join Us" },
-    { href: "/contact/", zh: "联系", en: "Contact" }
+    { href: "/join/", zh: "加入我们", en: "Join Us" }
   ]
 };
