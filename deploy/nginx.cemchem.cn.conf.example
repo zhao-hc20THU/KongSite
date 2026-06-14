@@ -1,0 +1,44 @@
+server {
+    listen 80;
+    listen [::]:80;
+    server_name cemchem.cn www.cemchem.cn;
+
+    root /var/www/cemchem.cn;
+    index index.html;
+
+    access_log /var/log/nginx/cemchem.cn.access.log;
+    error_log /var/log/nginx/cemchem.cn.error.log;
+
+    location / {
+        try_files $uri $uri/ $uri.html =404;
+    }
+
+    location ~* \.(?:css|js|jpg|jpeg|gif|png|svg|ico|webp|woff2?)$ {
+        expires 30d;
+        add_header Cache-Control "public, max-age=2592000, immutable";
+        try_files $uri =404;
+    }
+}
+
+# After HTTPS certificates are ready, enable this block and optionally redirect HTTP to HTTPS.
+# server {
+#     listen 443 ssl http2;
+#     listen [::]:443 ssl http2;
+#     server_name cemchem.cn www.cemchem.cn;
+#
+#     root /var/www/cemchem.cn;
+#     index index.html;
+#
+#     ssl_certificate /etc/nginx/ssl/cemchem.cn/fullchain.pem;
+#     ssl_certificate_key /etc/nginx/ssl/cemchem.cn/privkey.pem;
+#
+#     location / {
+#         try_files $uri $uri/ $uri.html =404;
+#     }
+#
+#     location ~* \.(?:css|js|jpg|jpeg|gif|png|svg|ico|webp|woff2?)$ {
+#         expires 30d;
+#         add_header Cache-Control "public, max-age=2592000, immutable";
+#         try_files $uri =404;
+#     }
+# }
