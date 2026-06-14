@@ -46,7 +46,7 @@ export default function PeoplePage() {
       </section>
       <section className="section-pad bg-cement">
         <div className="page-shell">
-          <SectionTitle titleZh="成员分类" titleEn="Member Sections" />
+          <SectionTitle titleZh="团队构成" titleEn="Team Structure" />
           <div className="grid gap-4 md:grid-cols-2">
             {people.sections.map((section) => (
               <article key={section.titleEn} className="rounded border border-slate-200 bg-white p-6">

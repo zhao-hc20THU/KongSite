@@ -32,10 +32,10 @@ export const people = {
       noteEn: "Master students contribute to material preparation, performance testing, microstructure analysis, and application validation."
     },
     {
-      titleZh: "校友与合作伙伴",
-      titleEn: "Alumni and Collaborators",
-      noteZh: "课题组与高校、科研院所和工程单位保持合作，推动基础研究与工程应用衔接。",
-      noteEn: "The group collaborates with universities, research institutes, and engineering partners to connect fundamental research with practice."
+      titleZh: "已毕业出站学者和合作伙伴",
+      titleEn: "Graduated Alumni, Former Postdoctoral Fellows and Collaborators",
+      noteZh: "课题组与已毕业学生、出站学者、高校、科研院所和工程单位保持学术联系与合作，推动基础研究与工程应用衔接。",
+      noteEn: "The group maintains academic links and collaborations with graduated students, former postdoctoral fellows, universities, research institutes, and engineering partners."
     }
   ]
 };
