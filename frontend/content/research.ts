@@ -48,9 +48,9 @@ export const researchDirections: ResearchDirection[] = [
       "研究聚合物纤维、高吸水性树脂、水凝胶和聚合物改性体系对水泥基材料收缩、开裂、韧性和界面粘结性能的影响。",
     summaryEn:
       "This direction examines how polymer fibers, superabsorbent polymers, hydrogels, and polymer-modified systems affect shrinkage, cracking, toughness, and interfacial bonding.",
-    figure: "/images/research/latex-rheology.jpg",
-    figureAlt: "Mechanism diagram showing adsorption states of latex particles and rheology of fresh cement paste",
-    figureCaptionZh: "乳液颗粒吸附状态与水泥浆体流变响应",
+    figure: "/images/research/shrinkage-sap.jpg",
+    figureAlt: "SAP internal curing material and curves for internal relative humidity and autogenous deformation",
+    figureCaptionZh: "SAP 内养护调控内部湿度与高强混凝土自收缩变形",
     methods: ["力学性能测试", "收缩与开裂评价", "界面与孔结构分析", "内养护机制研究"],
     applications: ["抗裂砂浆与混凝土", "增韧水泥基材料", "自修复胶凝材料"]
   },
