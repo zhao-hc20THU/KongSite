@@ -15,8 +15,8 @@ export default function ResearchPage() {
       <PageHero
         titleZh="研究方向"
         titleEn="Research"
-        descriptionZh="课题组围绕水泥混凝土化学功能材料，连接有机高分子、无机水化产物、微纳结构和宏观工程性能。"
-        descriptionEn="The research portfolio connects chemical functional materials, polymer-cement interactions, microstructure, and engineering performance."
+        descriptionZh="课题组围绕水泥混凝土化学功能材料，连接有机高分子、无机水化产物、微纳结构、宏观工程性能和工程应用。"
+        descriptionEn="The research portfolio connects chemical functional materials, polymer-cement interactions, microstructure, engineering performance, and field applications."
       />
       <section className="section-pad bg-white">
         <div className="page-shell">
@@ -33,8 +33,8 @@ export default function ResearchPage() {
           <SectionTitle
             titleZh="方法与证据链"
             titleEn="Methods and Evidence Chain"
-            introZh="研究页面第一版只呈现经材料支持的方向性描述；具体仪器、平台、项目编号和成果数据需在正式发布前逐项核对。"
-            introEn="The first version presents only source-supported research positioning. Facilities, project numbers, and quantitative achievements should be verified before public release."
+            introZh="课题组将化学作用机制、微结构表征、宏观性能测试和工程应用反馈结合起来，形成从基础科学到工程技术的研究链条。"
+            introEn="The group combines chemical mechanisms, microstructure characterization, macroscopic performance testing, and engineering feedback into a research chain from fundamental science to technology."
           />
           <div className="grid gap-4 md:grid-cols-3">
             {["化学作用机制", "微结构与孔结构", "工程性能与应用反馈"].map((item) => (

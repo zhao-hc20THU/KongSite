@@ -14,7 +14,7 @@ export default function NewsPage() {
       <PageHero
         titleZh="组内动态"
         titleEn="News"
-        descriptionZh="用于发布论文、会议、招生、学生培养和工程应用进展。第一版包含网站建设记录和占位条目。"
+        descriptionZh="用于发布论文、会议、招生、学生培养和工程应用进展，展示课题组在水泥混凝土化学功能材料方向的持续工作。"
         descriptionEn="This section can host publication news, conference activities, recruitment notices, student achievements, and application updates."
       />
       <section className="section-pad bg-white">

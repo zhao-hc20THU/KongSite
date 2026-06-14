@@ -1,8 +1,17 @@
+import Image from "next/image";
 import type { ResearchDirection } from "@/content/research";
 
 export function ResearchCard({ direction }: { direction: ResearchDirection }) {
   return (
     <article className="rounded border border-slate-200 bg-white p-6 shadow-sm">
+      <Image
+        src={direction.figure}
+        alt={direction.figureAlt}
+        width={700}
+        height={394}
+        className="mb-5 aspect-video w-full rounded border border-slate-200 object-cover"
+      />
+      <p className="mb-4 text-xs leading-5 text-slate-500">{direction.figureCaptionZh}</p>
       <div className="mb-4 h-1 w-14 rounded bg-mineral" />
       <h3 className="text-xl font-semibold text-ink">{direction.titleZh}</h3>
       <p className="mt-1 text-sm font-medium text-mineral">{direction.titleEn}</p>

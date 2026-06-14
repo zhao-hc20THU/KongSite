@@ -43,7 +43,7 @@ Most text is stored under:
 content/
 ```
 
-Before public release, replace TODO placeholders and verify:
+Before public release, verify and update:
 
 - member names and photos
 - full publication list, DOI, volume, issue, pages

@@ -14,8 +14,8 @@ export default function PeoplePage() {
       <PageHero
         titleZh="团队成员"
         titleEn="People"
-        descriptionZh="本页仅展示已由提供材料支持的信息；完整成员名单、照片和个人方向待正式确认后补充。"
-        descriptionEn="This page displays only source-supported information. Full member profiles should be added after confirmation."
+        descriptionZh="课题组面向建筑高分子材料、建筑材料微结构与化学、水泥混凝土外加剂和工程应用开展团队化研究。"
+        descriptionEn="The group works on construction polymers, microstructure and chemistry of building materials, cement and concrete admixtures, and engineering applications."
         image="/images/hero-group.jpg"
       />
       <section className="section-pad bg-white">
@@ -23,9 +23,7 @@ export default function PeoplePage() {
           <SectionTitle titleZh="负责人" titleEn="Principal Investigator" />
           <article className="grid gap-8 rounded border border-slate-200 bg-cement p-8 md:grid-cols-[220px_1fr]">
             <div className="flex h-48 items-center justify-center rounded bg-white text-center text-sm font-semibold text-mineral ring-1 ring-slate-200">
-              Photo
-              <br />
-              TODO
+              Kong&apos;s Lab
             </div>
             <div>
               <h2 className="text-3xl font-semibold text-ink">{people.principalInvestigator.nameZh}</h2>

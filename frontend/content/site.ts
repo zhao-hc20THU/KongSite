@@ -14,8 +14,8 @@ export const site = {
   email: "kxm@mail.tsinghua.edu.cn",
   addressZh: "清华大学土木工程系",
   addressEn: "Department of Civil Engineering, Tsinghua University",
-  icpPlaceholder: "ICP备案号待补充",
-  publicSecurityPlaceholder: "公安备案号待补充",
+  icpPlaceholder: "ICP备案信息将在正式绑定中国内地服务器后更新",
+  publicSecurityPlaceholder: "公安联网备案信息将在正式上线后更新",
   nav: [
     { href: "/", zh: "首页", en: "Home" },
     { href: "/research/", zh: "研究方向", en: "Research" },

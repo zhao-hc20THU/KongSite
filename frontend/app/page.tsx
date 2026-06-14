@@ -8,6 +8,7 @@ import { site } from "@/content/site";
 import { researchDirections } from "@/content/research";
 import { publications } from "@/content/publications";
 import { news } from "@/content/news";
+import { projects } from "@/content/projects";
 
 export default function HomePage() {
   return (
@@ -59,9 +60,9 @@ export default function HomePage() {
           <div>
             <SectionTitle
               eyebrow="Selected Publications"
-              titleZh="代表性论文线索"
-              titleEn="Selected publication records from supplied materials"
-              introZh="以下条目仅使用已提供 PPT 中可见的信息，DOI、卷期和页码待后续根据正式论文清单补充。"
+              titleZh="代表性论文"
+              titleEn="Selected Publications"
+              introZh="论文题名链接至 DOI 页面，便于读者进入期刊或出版商页面查看摘要、卷期和全文信息。"
             />
             <div className="rounded border border-slate-200 bg-white px-6">
               {publications.slice(0, 3).map((publication) => (
@@ -85,6 +86,31 @@ export default function HomePage() {
       </section>
 
       <section className="section-pad bg-white">
+        <div className="page-shell">
+          <SectionTitle
+            eyebrow="Projects"
+            titleZh="承担项目"
+            titleEn="Selected Projects and Collaborations"
+            introZh="课题组承担国家重点研发计划、国家自然科学基金以及企业合作项目，围绕水泥化学功能材料和工程应用开展研究。"
+          />
+          <div className="grid gap-4 md:grid-cols-2">
+            {projects.slice(0, 6).map((project) => (
+              <article key={`${project.sponsorZh}-${project.titleZh}`} className="rounded border border-slate-200 bg-cement p-5">
+                <div className="text-xs font-semibold uppercase tracking-wide text-hydrate">{project.categoryZh}</div>
+                <h3 className="mt-2 text-base font-semibold leading-7 text-ink">{project.titleZh}</h3>
+                <p className="mt-2 text-sm text-slate-600">
+                  {project.sponsorZh} · {project.period}
+                </p>
+              </article>
+            ))}
+          </div>
+          <Link href="/projects/" className="mt-7 inline-flex rounded border border-mineral px-5 py-3 text-sm font-semibold text-mineral hover:bg-cement">
+            View all projects
+          </Link>
+        </div>
+      </section>
+
+      <section className="section-pad bg-cement">
         <div className="page-shell grid items-center gap-10 lg:grid-cols-[0.9fr_1fr]">
           <Image
             src="/images/hero-group.jpg"

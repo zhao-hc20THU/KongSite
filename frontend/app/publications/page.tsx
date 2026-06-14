@@ -15,16 +15,16 @@ export default function PublicationsPage() {
       <PageHero
         titleZh="论文成果"
         titleEn="Publications"
-        descriptionZh="第一版仅列出提供材料中明确出现的论文条目，不补造 DOI、卷期页码或通讯作者信息。"
-        descriptionEn="The first version lists only records visible in the supplied materials and does not invent DOI, volume, pages, or authorship metadata."
+        descriptionZh="本页整理孔祥明课题组在水泥化学、化学外加剂、建筑高分子材料和水泥基材料性能调控方面的代表性论文。"
+        descriptionEn="This page lists representative publications on cement chemistry, chemical admixtures, construction polymers, and performance regulation of cement-based materials."
       />
       <section className="section-pad bg-cement">
         <div className="page-shell">
           <SectionTitle
-            titleZh="已录入条目"
-            titleEn="Records Entered"
-            introZh="请在正式上线前用完整论文清单替换或补全这些条目。"
-            introEn="Replace or complete these records with a verified publication list before public release."
+            titleZh="代表性论文"
+            titleEn="Selected Publications"
+            introZh="论文题名链接至 DOI 页面，可进一步查看期刊页面、摘要和出版信息。"
+            introEn="Publication titles link to DOI pages for journal records, abstracts, and publisher information."
           />
           <div className="rounded border border-slate-200 bg-white px-6">
             {publications.map((publication) => (

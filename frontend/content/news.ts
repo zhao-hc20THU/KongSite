@@ -8,10 +8,19 @@ export const news = [
       "A static prototype for cemchem.cn was started using the supplied group introduction slides, logo files, photos, and visual references."
   },
   {
-    date: "TODO",
-    titleZh: "TODO：补充近期论文、会议或招生动态",
-    titleEn: "TODO: add recent publications, conferences, or recruitment news",
-    summaryZh: "请后续补充已确认的新闻标题、日期、图片和链接。",
-    summaryEn: "Add confirmed titles, dates, images, and links for future news items."
+    date: "2026",
+    titleZh: "中低温碳封存特种水泥技术研究持续推进",
+    titleEn: "Research on special cement technology for medium- and low-temperature carbon storage continues",
+    summaryZh: "课题组围绕碳封存固井材料与化学外加剂体系开展研究，服务 CO2 地质封存和严酷环境工程需求。",
+    summaryEn:
+      "The group continues to study cementing materials and chemical admixture systems for CO2 storage and demanding engineering environments."
+  },
+  {
+    date: "2025-2026",
+    titleZh: "高寒高海拔与盐渍土地区混凝土耐久性研究",
+    titleEn: "Durability of concrete foundations in cold, high-altitude, and saline-soil environments",
+    summaryZh: "相关合作项目面向输电线路现浇基础混凝土耐久性提升，为特殊服役环境下的材料设计提供依据。",
+    summaryEn:
+      "This collaboration supports durability improvement of cast-in-place concrete foundations for transmission-line infrastructure in special service environments."
   }
 ];
