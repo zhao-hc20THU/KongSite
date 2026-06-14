@@ -1,6 +1,9 @@
 import type { Publication } from "@/content/publications";
 
 export function PublicationItem({ publication }: { publication: Publication }) {
+  const details = [publication.journal, publication.volume, publication.pages].filter(Boolean).join(" · ");
+  const recordLabel = publication.doi ? `DOI: ${publication.doi}` : publication.sourceLabel ?? "Publication record";
+
   return (
     <article className="border-b border-slate-200 py-6">
       <div className="text-sm font-semibold text-mineral">{publication.year}</div>
@@ -11,11 +14,12 @@ export function PublicationItem({ publication }: { publication: Publication }) {
       </h3>
       <p className="mt-2 text-sm leading-6 text-slate-700">{publication.authors}</p>
       <p className="mt-1 text-sm italic text-slate-600">
-        {publication.journal}, {publication.year}. DOI:{" "}
+        {details}.{" "}
         <a href={publication.url} className="text-mineral hover:underline" target="_blank" rel="noreferrer">
-          {publication.doi}
+          {recordLabel}
         </a>
       </p>
+      {publication.citationCount ? <p className="mt-1 text-xs font-medium text-slate-500">Citations shown on source page: {publication.citationCount}</p> : null}
       <div className="mt-3 flex flex-wrap gap-2">
         {publication.tags.map((tag) => (
           <span key={tag} className="rounded-full bg-white px-3 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
